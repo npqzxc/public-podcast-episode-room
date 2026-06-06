@@ -1,0 +1,11 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #1b2430; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 28px; background: #20324d; color: #fff; }
+.topbar a { color: #d6e2ff; margin-left: 14px; text-decoration: none; }
+.shell { max-width: 1040px; margin: 0 auto; padding: 24px; }
+.panel, .cards article, .record-list li, .form { background: #fff; border-radius: 16px; padding: 16px; box-shadow: 0 12px 26px rgba(18, 31, 49, 0.08); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.record-list { list-style: none; padding: 0; }
+.record-list li { display: flex; justify-content: space-between; margin-bottom: 12px; }
+.form { display: grid; gap: 12px; }
+input, textarea, button { font: inherit; padding: 12px; border-radius: 12px; border: 1px solid #ccd6e2; }
+button { background: #1d58ff; color: #fff; cursor: pointer; }

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Podcast Episode Room</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script defer src="/static/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar"><h1>Podcast Episode Room</h1><nav><a href="/">仪表盘</a><a href="/records">列表</a><a href="/create">新建</a></nav></header>
+    <main class="shell">
+      <section class="panel">
+        <h2>新建记录</h2>
+        <form id="record-form" class="form">
+          <input name="title" placeholder="标题" required />
+          <input name="owner" placeholder="负责人" required />
+          <textarea name="note" placeholder="说明" required></textarea>
+          <button type="submit">提交</button>
+        </form>
+        <p id="message"></p>
+      </section>
+    </main>
+  </body>
+</html>

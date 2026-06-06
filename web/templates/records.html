@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Podcast Episode Room</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="topbar"><h1>Podcast Episode Room</h1><nav><a href="/">仪表盘</a><a href="/records">列表</a><a href="/create">新建</a></nav></header>
+    <main class="shell">
+      <section class="panel">
+        <h2>记录列表</h2>
+        <ul class="record-list">
+          {{range .Records}}<li><strong>{{.Title}}</strong><span>{{.Owner}} / {{.Status}}</span></li>{{end}}
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
